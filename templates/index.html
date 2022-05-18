@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Popolare</title>
+</head>
+
+<body>
+    <h1>Current Orders</h1>
+    <p>
+        {% for pizza in pizzas %}
+    <div>
+        <p>
+            Customer name: {{pizza.customer_name}}
+        </p>
+
+        <p>
+            Time of order: {{pizza.order_time}}
+        </p>
+
+        <p>
+            Quantity: {{pizza.quantity}}
+        </p>
+
+        <p>
+            Type of pizza: {{pizza.pizza}}
+        </p>
+
+        <p>
+            Extra toppings: {{pizza.extra_toppings}}
+        </p>
+
+        <hr>
+
+    </div>
+    {% endfor %}
+    </p>
+</body>
+
+</html>
