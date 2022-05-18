@@ -1,0 +1,18 @@
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #FF495C;
+    color: #fcfcfc;
+    padding: 10px;
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    ;
+}
+
+h1 {
+    text-align: center;
+}
