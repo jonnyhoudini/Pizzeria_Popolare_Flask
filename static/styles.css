@@ -24,13 +24,33 @@ h2 {
     text-align: center;
 }
 
-.order-box {
-    text-align: center;
+.order-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 hr {
     background-color: #fff;
     border-top: 2px dashed #8c8b8b;
     width: 70%;
+    margin: 20px auto;
+}
+
+.order-container {
+    background-color: #FF495C;
+    width: 250px;
+    height: 300px;
+    padding: 16px;
+    color: #F1ECE3;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #F1ECE3;
+}
+
+.single-order {
     margin: auto;
 }

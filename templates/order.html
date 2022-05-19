@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order {{index}}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>{{title}} - individual order</title>
 </head>
 
 <body>
+
+    <header>
+        <h1>Pizzeria Popolare</h1>
+    </header>
+    <h2>{{order.customer_name}}'s Order</h2>
+
+    <div class="order-container single-order">
+
+        <div class="order">
+            <p>Time ordered: {{ order.order_time }}</p>
+            <p>Quantity: {{ order.quantity }}</p>
+            <p>Pizza: {{order.pizza}}</p>
+            <p>Extra toppings: {{order.extra_toppings }}</p>
+        </div>
+    </div>
 
 </body>
 

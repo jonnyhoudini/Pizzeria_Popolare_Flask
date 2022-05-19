@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/29717c776a.js" crossorigin="anonymous"></script>
 
-    <title>Pizzeria Popolare</title>
+    <title>{{title}} - Home Page</title>
 </head>
 
 <body>
@@ -23,34 +23,37 @@
     </header>
     <h2>Current Orders</h2>
 
-    <p>
+    <div class="order-list">
         {% for pizza in pizzas %}
-    <div class="order-box">
-        <p>
-            Customer name: {{pizza.customer_name}}
-        </p>
+        <div class="order-container">
+            <p>
+                Customer name: {{pizza.customer_name}}
+            </p>
 
-        <p>
-            Time of order: {{pizza.order_time}}
-        </p>
+            <p>
+                Time of order: {{pizza.order_time}}
+            </p>
 
-        <p>
-            Quantity: {{pizza.quantity}}
-        </p>
+            <p>
+                Quantity: {{pizza.quantity}}
+            </p>
 
-        <p>
-            Type of pizza: {{pizza.pizza}}
-        </p>
+            <p>
+                Type of pizza: {{pizza.pizza}}
+            </p>
 
-        <p>
-            Extra toppings: {{pizza.extra_toppings}}
-        </p>
+            <p>
+                Extra toppings: {{pizza.extra_toppings}}
+            </p>
 
-        <hr>
+            <p>
+                <a href="/orders/{{pizzas.index(pizza)}}">Show Order</a>
+            </p>
 
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-    </p>
+    <hr>
 </body>
 
 </html>
