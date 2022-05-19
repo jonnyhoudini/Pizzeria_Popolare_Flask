@@ -1,12 +1,12 @@
 body {
-    background-color: #fcfcfc;
+    background-color: #F1ECE3;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 header {
     background-color: #FF495C;
-    color: #fcfcfc;
+    color: #F1ECE3;
     padding: 10px;
     font-family: 'Italiana', serif;
     font-size: 2rem;
@@ -15,4 +15,22 @@ header {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    background-color: #90BF22;
+    padding: 5px;
+    color: #F1ECE3;
+    text-align: center;
+}
+
+.order-box {
+    text-align: center;
+}
+
+hr {
+    background-color: #fff;
+    border-top: 2px dashed #8c8b8b;
+    width: 70%;
+    margin: auto;
 }
